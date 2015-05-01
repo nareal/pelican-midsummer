@@ -1,0 +1,8 @@
+<small>
+  {% set years = dates|groupby('date.year')|sort(reverse=False) %}
+  {% set sinceYear = years|first|first|default('2015') %}
+  <p class = "credit">&copy; {{ sinceYear }} - <script type="text/javascript">
+document.write(new Date().getFullYear()); </script> {{ SITENAME }} </br>
+  Theme <a href="https://github.com/nareal/pelican-midsummer">pelican-midsummer</a>
+  </p>
+</small>
