@@ -1,7 +1,6 @@
-# Pelican-Sundown
+# Pelican-midsummer
 
-A flexible [pelican](http://docs.getpelican.com) based on the [github
-pages](https://github.com/orderedlist) sundown theme created originally by [orderedlist](http://pages.github.com/).
+This [pelican](http://docs.getpelican.com) theme is a fork of the [pelican-sundown](https://github.com/keningle/pelican-sundown) theme by [Ken Ingle](https://github.com/keningle).
 
 ## Configuration
 
@@ -30,11 +29,25 @@ GRV_URL = "http://www.gravatar.com/avatar/" + hashlib.md5(EMAIL.lower()).hexdige
 GRV_URL += urllib.urlencode({'d':DEFAULT_GRV_URL, 's':str(GRV_SIZE)})
 ``` 
 
-## Who is using pelican-sundown
+## Who is using pelican-midsummer
 
-* [KenIngle.com](http://keningle.com) - Hosted on github pages
+* [nelsonareal.net](http://nelsonareal.net)
  
 ## License (MIT)
+
+The MIT License (MIT)
+
+Copyright (c) 2015, Nelson Areal
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+---
+
+Original pelican-sundown license:
 
 The MIT License (MIT)
 
