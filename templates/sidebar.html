@@ -1,15 +1,18 @@
 {% if DISPLAY_PAGES_ON_MENU -%}
-<p>
+<ul>
   {% for page in PAGES %}
-    <div class="view"><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></div>
+    {% if page %}
+      <li><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>
+    {% endif %}
   {% endfor %}
   <!-- <div class="view"><a href="{{ SITEURL }}/blog/index.html">Blog</a></div>
   <div class="view">
   <ul>
-  	<li><a href="{{ SITEURL }}/blog/archives/archives.html">Archives</a>
+    <li><a href="{{ SITEURL }}/blog/archives/archives.html">Archives</a>
   </ul>
   </div> -->
-</p>
+</ul>
+
 {% endif %}
 
 <!-- Social links -->
@@ -18,10 +21,9 @@
 
   {% for title, link in SOCIAL %}
     <a href="{{ link }}" target="_blank" title="{{ name }}">
-        <i class="fa fa-{{ title }} fa-2x"></i>
+        <i class="fa fa-{{ title }}"></i>
     </a>
   {% endfor %}
 
 </div>
-<br>
 {% endif %}
