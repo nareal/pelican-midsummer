@@ -1,8 +1,6 @@
 @import url(https:////fonts.googleapis.com/css?family=Raleway:400,300,600&subset=latin);
 @import url(https:////fonts.googleapis.com/css?family=Roboto+Slab:400,700&subset=latin);
-
 @import url(font-awesome.min.css);
-
 body {
   padding: 50px;
   font-family: Raleway, HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -21,15 +19,28 @@ body {
   margin-left: auto;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #400A0F;
   margin: 0 0 20px;
 }
-p, ul, ol, table, pre, dl {
+
+p,
+ul,
+ol,
+table,
+pre,
+dl {
   margin: 0 0 20px;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   line-height: 1.1;
 }
 
@@ -42,23 +53,25 @@ h2 {
   color: #393939;
 }
 
-h3, h4, h5, h6 {
+h3,
+h4,
+h5,
+h6 {
   color: #494949;
   font-weight: bold;
 }
 
 a {
   /*color: #CD3829;*/
+
   color: #B61712;
   font-weight: 400;
   text-decoration: none;
 }
 
-
 a:hover {
   color: #113D58;
 }
-
 
 a small {
   font-size: 11px;
@@ -79,7 +92,8 @@ blockquote {
   font-style: italic;
 }
 
-code, pre {
+code,
+pre {
   font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
   color: #333;
   font-size: 12px;
@@ -98,7 +112,8 @@ table {
   border-collapse: collapse;
 }
 
-th, td {
+th,
+td {
   text-align: left;
   padding: 5px 10px;
   border-bottom: 1px solid #e5e5e5;
@@ -127,7 +142,8 @@ header {
   position: fixed;
 }
 
-header ul, header li {
+header ul,
+header li {
   list-style: none;
   text-align: left;
   padding: 0px, 0px, 0px, 0px;
@@ -145,24 +161,22 @@ header .title {
   padding-bottom: 8px;
 }
 
-
 div[class='social'] a {
-    margin-top: 40px;
-		background-repeat: no-repeat;
-		background-position: 3px 6px;
-    padding-left: 10px;
-    color: #113D58;
-    text-decoration: none;
-	}
+  margin-top: 40px;
+  background-repeat: no-repeat;
+  background-position: 3px 6px;
+  padding-left: 10px;
+  color: #113D58;
+  text-decoration: none;
+}
 
 div[class='social'] a:hover {
-    color: #B61712;
-  }
+  color: #B61712;
+}
 
 div[class='social'] a i {
-     font-size: 48px;
-  }
-
+  font-size: 48px;
+}
 
 section {
   width: 630px;
@@ -188,23 +202,21 @@ footer {
   bottom: 10px;
 }
 
-@media print, screen and (max-width: 1023px) {
-
+@media print,
+screen and (max-width: 1023px) {
   div.wrapper {
     width: auto;
     margin: 0;
   }
-
   /*header {
     padding-right:320px;
   }
   */
 
-  body{
+  body {
     padding: 100px;
     margin-top: 100px;
   }
-
   header {
     position: fixed;
     float: center;
@@ -213,7 +225,7 @@ footer {
     left: 0;
     z-index: 1;
     font-size: 24px;
-    font-weight:700;
+    font-weight: 700;
     line-height: 36px;
     background: #ffffff;
     text-align: center;
@@ -221,112 +233,97 @@ footer {
     border-width: 3px 0;
     padding-bottom: 10px;
   }
-
   header .title {
     margin-top: 10px;
   }
-
   div[class='social'] a {
     margin-top: 5px;
   }
-
   div[class='social'] a i {
-     font-size: 36px;
+    font-size: 36px;
   }
-
-  section, footer {
+  section,
+  footer {
     float: none;
     position: static;
     width: auto;
   }
-
   section {
     padding: 20px 0;
     border-bottom: 1px solid #e5e5e5;
     border-width: 1px 0;
     margin: 0 0 20px;
   }
-
   header a small {
     display: inline;
   }
-
-  header ul, header li {
+  header ul,
+  header li {
     /* make list elements fall inline as block elements */
+
     position: relative;
     display: inline-block;
     text-align: center;
     padding-left: 15px;
   }
-
   header li {
     padding-left: 15px;
   }
-
   header li:before {
     content: " \2022 ";
     padding-right: 15px;
   }
-
   header li:first-child:before {
     content: none;
   }
-
   header li:nth-child(2):before {
     content: none;
   }
-
 }
 
-@media print, screen and (max-width: 720px) {
+@media print,
+screen and (max-width: 720px) {
   body {
     word-wrap: break-word;
     padding-top: 40px;
     padding-left: 35px;
     padding-right: 35px;
   }
-
   header {
     font-size: 18px;
     line-height: 24px;
   }
-
-  header ul{
+  header ul {
     padding: 0px;
     margin-bottom: 5px;
   }
-
   div[class='social'] a {
     margin-top: 0px;
     line-height: 24px;
   }
-
   div[class='social'] a i {
-     font-size: 28px;
+    font-size: 28px;
   }
-
-  pre, code {
+  pre,
+  code {
     word-wrap: normal;
   }
-
 }
 
-@media print, screen and (max-width: 480px) {
+@media print,
+screen and (max-width: 480px) {
   body {
     padding-left: 25px;
     padding-right: 25px;
     margin-top: 130px;
   }
-
   header ul {
     padding-bottom: 10px;
   }
-
   h1 {
     font-size: 24px;
     font-weight: bold;
   }
-
 }
 
 @media print {
@@ -339,6 +336,7 @@ footer {
 
 .front-title {
   /*color: #39c;*/
+
   font-weight: 400;
   text-decoration: none;
   font-size: 26px;
@@ -355,7 +353,8 @@ footer {
   font-size: 14px;
 }
 
-.article-title, .entry-title {
+.article-title,
+.entry-title {
   text-transform: uppercase;
   font-size: 22px;
   letter-spacing: .2rem;
@@ -366,12 +365,11 @@ footer {
   float: right;
   font-size: 14px;
 }
-
-
 /*
   jQuery navigation arrow
   [Adding jQuery navigation arrow](http://mygeekdaddy.net/2015/01/28/adding-jquery-navigation-arrow/)
 */
+
 .cd-top {
   display: inline-block;
   height: 40px;
@@ -382,10 +380,12 @@ footer {
   z-index: 1000;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
   /* image replacement properties */
+
   overflow: hidden;
   text-indent: 100%;
   white-space: nowrap;
   /* background: rgba(232, 98, 86, 0.8) url(../img/cd-top-arrow.svg) no-repeat center 50%; */
+
   background: #123D57 url(../images/cd-top-arrow.svg) no-repeat center 50%;
   visibility: hidden;
   opacity: 0;
@@ -394,23 +394,29 @@ footer {
   -moz-transition: opacity .3s 0s, visibility 0s .3s;
   transition: opacity .3s 0s, visibility 0s .3s;
 }
-.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+
+.cd-top.cd-is-visible,
+.cd-top.cd-fade-out,
+.no-touch .cd-top:hover {
   -webkit-transition: opacity .3s 0s, visibility 0s 0s;
   -moz-transition: opacity .3s 0s, visibility 0s 0s;
   transition: opacity .3s 0s, visibility 0s 0s;
 }
+
 .cd-top.cd-is-visible {
   /* the button becomes visible */
+
   visibility: visible;
   opacity: 1;
 }
+
 .cd-top.cd-fade-out {
   /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+
   opacity: .5;
 }
+
 .no-touch .cd-top:hover {
   background-color: #f09c05;
   opacity: 1;
 }
-
-
