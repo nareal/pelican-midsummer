@@ -1,13 +1,13 @@
-@import url(https:////fonts.googleapis.com/css?family=Raleway:400,300,600&subset=latin);
-@import url(https:////fonts.googleapis.com/css?family=Roboto+Slab:400,700&subset=latin);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);
 @import url(font-awesome.min.css);
+
 body {
   padding: 50px;
-  font-family: Raleway, HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 15px;
+  font-family: Source Sans Pro, Helvetica, sans-serif;
+  font-size: 16px;
   line-height: 24px;
-  // color:#777;
-  // color:#333;
+  color:#555555;
   font-weight: 400;
 }
 
@@ -133,22 +133,37 @@ img {
 }
 
 header {
-  font-family: "Roboto Slab", serif;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 36px;
+  font-family: "Open Sans Condensed", serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 46px;
   width: 270px;
   float: left;
   position: fixed;
 }
 
-header ul,
-header li {
+header .active span{
+  border-bottom: thick solid #E8E6E3;
+}
+
+
+header li,
+header ul {
   list-style: none;
   text-align: left;
   padding: 0px, 0px, 0px, 0px;
   padding-left: 0;
 }
+
+
+ul .sublink {
+  list-style: none;
+  text-align: left;
+  padding: 0px, 0px, 0px, 0px;
+  padding-left: 20px;
+  font-size: 28px;
+}
+
 
 strong {
   color: #222;
@@ -156,9 +171,10 @@ strong {
 }
 
 header .title {
-  font-size: 28px;
+  font-size: 42px;
   padding-top: 2px;
   padding-bottom: 8px;
+  font-weight: 700;
 }
 
 div[class='social'] a {
@@ -257,8 +273,12 @@ screen and (max-width: 1023px) {
   header a small {
     display: inline;
   }
+  ul .sublink{
+    font-size: 24px;
+  }
   header ul,
-  header li {
+  header li,
+  ul .sublink{
     /* make list elements fall inline as block elements */
 
     position: relative;
@@ -289,11 +309,13 @@ screen and (max-width: 720px) {
     padding-left: 35px;
     padding-right: 35px;
   }
-  header {
+  header,
+  ul .sublink{
     font-size: 18px;
     line-height: 24px;
   }
-  header ul {
+  header ul,
+  ul .sublink {
     padding: 0px;
     margin-bottom: 5px;
   }
@@ -336,7 +358,6 @@ screen and (max-width: 480px) {
 
 .front-title {
   /*color: #39c;*/
-
   font-weight: 400;
   text-decoration: none;
   font-size: 26px;
@@ -355,8 +376,8 @@ screen and (max-width: 480px) {
 
 .article-title,
 .entry-title {
-  text-transform: uppercase;
-  font-size: 22px;
+  text-transform: capitalize;
+  font-size: 32px;
   letter-spacing: .2rem;
   font-weight: 300;
 }

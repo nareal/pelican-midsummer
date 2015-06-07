@@ -1,19 +1,30 @@
-{% if DISPLAY_PAGES_ON_MENU -%}
 <ul>
-  {% for page in PAGES %}
-    {% if page %}
-      <li><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>
+{% if DISPLAY_PAGES_ON_MENU -%}
+  {% for p in PAGES %}
+    {% if p %}
+    <li {% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}"><span>{{ p.title }}</span></a></li>
     {% endif %}
   {% endfor %}
-  <!-- <div class="view"><a href="{{ SITEURL }}/blog/index.html">Blog</a></div>
-  <div class="view">
-  <ul>
-    <li><a href="{{ SITEURL }}/blog/archives/archives.html">Archives</a>
-  </ul>
-  </div> -->
+{% endif %}
+
+
+{% for title, link in MENUITEMS %}
+  {% set stripped_link = link|replace('/', '', 1)%}
+  {% if stripped_link in output_file %}
+      {% set link_state = 'class="active"' %}
+  {% else %}
+      {% set link_state = '' %}
+  {% endif %}
+  <li {{link_state}}><a href="{{ link }}"><span>{{ title }}</span></a></li>
+  {% if "blog" in output_file %}
+    {% if "archives" in output_file %}
+      {% set link_state = 'active' %}
+    {% endif %}
+    <li class="sublink {{link_state}}"><a href="{{ SITEURL }}/blog/archives/archives.html"><span>Archives</span></a></li>
+  {% endif %}
+{% endfor %}
 </ul>
 
-{% endif %}
 
 <!-- Social links -->
 {% if SOCIAL %}
