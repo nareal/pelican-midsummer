@@ -1,6 +1,6 @@
 <ul>
 {% if DISPLAY_PAGES_ON_MENU -%}
-  {% for p in PAGES %}
+  {% for p in pages %}
     {% if p %}
     <li {% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}"><span>{{ p.title }}</span></a></li>
     {% endif %}
